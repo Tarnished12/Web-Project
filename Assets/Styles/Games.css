@@ -1,30 +1,69 @@
 ﻿
-body {
+* {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
     box-sizing: border-box;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: url(../Pictures/compute-ea4c57a4.png);
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+form{
+    width: 90%;
+    max-width: 600px;
+}
+
+    
+
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s; 
+}
+
+
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
     cursor: pointer;
 }
 
-    button:hover {
-        background-color: #45a049;
-    }
+input:focus~label{
+    top: -35px;
+    font-size: 14px;
+}

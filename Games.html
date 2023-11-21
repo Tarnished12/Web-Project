@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Information Form</title>
-    <link rel="stylesheet" href="Games.css">
-   
+    <link rel="stylesheet" href="./Assets/Styles/Games.css">
+    <script src="https://kit.fontawesome.com/1ad5ec900a.js" crossorigin="anonymous"></script>
+</head>
     
 <body>
-
-    <h2>Game Information Form</h2>
+    
+    
    
     
     <form action="#" method="post">
+        <div class="input-group">
+            <label for="name"> <i class="fa-solid fa-user"></i> Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
         
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <div class="input-group">
+            <label for="email"> <i class="fa-solid fa-envelope"></i> Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
-
-        <label for="description">Game Description:</label>
-        <textarea id="description" name="description" rows="4" required></textarea>
-
-        <button type="submit">Submit</button>
+        <div class="input-group">
+            <label for="phone"> <i class="fa-solid fa-phone"></i> Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="description"><i class="fa-solid fa-pen"></i> Game Description:</label>
+            <textarea id="description" name="description" rows="8" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
     </form>
-
+   
 </body>
 </html>
