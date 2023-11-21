@@ -1,0 +1,65 @@
+﻿*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    min-height: 100vh;
+    background: url("../Pictures/Game.avif") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    position:fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    z-index:100;
+}
+.GameHub{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+}
+
+ .navbar a {
+     position: relative;
+     font-size: 18px;
+        color: white;
+        text-decoration: none;
+        margin-left: 40px;
+  }
+
+ .navbar a::before{
+     content: '';
+     position: absolute;
+     top:100%;
+     left: 0;
+     width: 0;
+     height: 2px;
+     background: white;
+     transition: .3s;
+ }
+
+    .navbar a:hover::before {
+        width: 100%;
+    }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: transparent; 
+    padding: 10px;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/Styles/Login.css">
+    <title>Login - GameHub</title>
+    <script>
+        function validateForm() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Simple validation for demonstration purposes
+            if (username === '' || password === '') {
+                alert('Please fill in both username and password.');
+                return false;
+            }
+
+            
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="LoginPage">
+        <h2>Login to GameHub</h2>
+        <form action="login_process.php" method="post" onsubmit="return validateForm()">
+
+            
+            <div class="input-box">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-box">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+</body>
+</html>
